@@ -6,8 +6,12 @@
     <meta name="Author" content="Radoslaw Mydlo">
     <title>Największe mosty świata</title>
     <link rel="stylesheet" type="text/css" href="cw1.css">
+    <script src="kolorujtlo.js"></script>
+	<script src="timedate.js"></script>
+
+	
 </head>
-<body>
+<body onload="startclock()">
 
 <section id="menu">
 <nav>
@@ -73,7 +77,18 @@
             <center><img src="Baluarte.jpg" alt="Zdjęcie mostu"></center>
 </div>
 
-
-</body>
+ <center><form method="post" name="background">
+        <input type="button" value="żółty" onclick="changeBackground('#FFFF00')">
+        <input type="button" value="czarny" onclick="changeBackground('#000000')">
+        <input type="button" value="biały" onclick="changeBackground('#FFFFFF')">
+        <input type="button" value="zielony" onclick="changeBackground('#00FF00')">
+        <input type="button" value="niebieski" onclick="changeBackground('#0000FF')">
+        <input type="button" value="pomarańczowy" onclick="changeBackground('#FF8000')">
+        <input type="button" value="szary" onclick="changeBackground('#C0C0C0')">
+        <input type="button" value="czerwony" onclick="changeBackground('#FF0000')">
+    </form></center>
+	<center><div id="zegarek"></div>
+	<div id="data"></div></center>
+</body
 </html>
 
