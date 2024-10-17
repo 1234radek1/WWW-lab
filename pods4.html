@@ -1,5 +1,9 @@
+
 <html>
  <head>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
+ <script src="https://developers.google.com/speed/libraries?hl=pl#jquery"></script>
+
  <link rel="stylesheet" type="text/css" href="cw1.css">
  <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
  <meta http-equiv="Content-Language" content="pl" />
@@ -9,7 +13,6 @@
 
 
 <body>
-
 <section id="menu">
 <nav>
 <ul>
@@ -35,6 +38,48 @@ Mosty buduje się z różnorodnych materiałów, w zależności od ich przeznacz
 <h2>7. Kompozyty (materiały z włókien)</h2>
 <h2>8. Aluminium</h2>
 <h2>9. Stal nierdzewna</h2>
+
+   <div id="animacjaTestowa1" class="test-block">Kliknij, a się powiększę</div>
+ 
+    <div id="animacjaTestowa2" class="test-block">Najedź kursorem, a się powiększę</div>
+ 
+    <div id="animacjaTestowa3" class="test-block">Klikaj, abym urósł</div>
+ 
+    <script>
+        $("#animacjaTestowa1").on("click", function(){
+            $(this).animate({
+                width: "500px",
+                opacity: 0.4,
+                fontSize: "3em",
+                borderWidth: "10px"
+            }, 1500);
+        });
+ 
+ 
+        $("#animacjaTestowa2").on("mouseover", function(){
+            $(this).animate({
+                width: 300
+            }, 800);
+        }).on("mouseout", function(){
+            $(this).animate({
+                width: 200
+            }, 800);
+        });
+ 
+        $("#animacjaTestowa3").on("click", function() {
+            if (!$(this).is(":animated")) {
+                $(this).animate({
+                    width: "+=200",
+                    height: "+=40",
+                    opacity: "+=0.1"
+                }, {
+                    duration: 3000
+                });
+            }
+        });
+    </script>
+
+
 
 </body>
 

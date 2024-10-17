@@ -72,3 +72,23 @@ padding: 20px;  /*Odstep wewnętrzny*/
     object-fit: cover; /* Dopasowanie obrazu do kontenera bez zniekształceń */
     border-radius: 10px; /* Zaokrąglenie rogów obrazów */
 }
+
+
+.test-block 
+{
+	width: 200px;
+	border: 2px solid rgba(122, 204, 120, 1);
+	background: rgba(170, 202, 150, 0.7);
+	text-align: center;
+	color: #000;
+	padding: 20px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+  }
