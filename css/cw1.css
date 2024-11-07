@@ -1,0 +1,94 @@
+#menu
+{
+ background-color: f4f4f4;
+padding: 20px;  /*Odstep wewnętrzny*/
+}
+#menu ul
+{
+	list-style-type:none; /*Usuwa punkty z listy*/
+	padding: 0;
+	margin: 0;
+	display: flex; /*Żeby lista była w poziomie */
+	justify-content: center; /* powoduje że lista jest na środku*/
+}
+#menu ul li
+{
+	margin-right: 20px; /* odstep miedzy tymi linkami w menu*/
+}
+#menu ul li a 
+{
+	color: #333;
+	padding: 20px 40px; /* Powiekszenie przyciskow */
+	background-color: #008CBA;
+	color: white;
+	border-radius: 5px;
+	font-size: 20px; 
+}
+
+ #kontakt
+ {
+    width: 50%;
+    margin: 0px auto;
+	padding:20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+#kontakt input, #kontakt textarea
+{
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+
+}
+#kontakt input[type="submit"]
+{
+
+	background-color: #008CBA;
+	color: white;
+	border: none;
+	cursor: pointer;
+	padding: 15px;
+
+
+}
+
+#zdj 
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dwie kolumny */
+    gap: 10px; /* Odstęp między zdjęciami */
+    max-width: 900px;
+    margin: 0 auto; /* Wyśrodkowanie całej sekcji */
+}
+
+#zdj img {
+    width: 100%; /* Każdy obraz zajmie całą szerokość komórki */
+    height: 200px; /* Ustawienie stałej wysokości */
+    object-fit: cover; /* Dopasowanie obrazu do kontenera bez zniekształceń */
+    border-radius: 10px; /* Zaokrąglenie rogów obrazów */
+}
+
+
+.test-block 
+{
+	width: 200px;
+	border: 2px solid rgba(122, 204, 120, 1);
+	background: rgba(170, 202, 150, 0.7);
+	text-align: center;
+	color: #000;
+	padding: 20px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+  }
