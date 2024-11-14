@@ -1,7 +1,7 @@
 <?php
     echo "<h2>1. </h2>";
 
-    $nr_indeksu = '164113';
+    $nr_indeksu = '164413';
     $nr_grupy = 'ISI2';
 
     echo 'Radoslaw Mydlo, ' . $nr_indeksu . ' grupa: ' . $nr_grupy . '<br><br>';
